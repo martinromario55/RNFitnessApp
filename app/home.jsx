@@ -8,6 +8,7 @@ import {
 import Animated, { FadeIn, FadeInDown } from 'react-native-reanimated'
 import Ionicons from 'react-native-vector-icons/FontAwesome'
 import ImageSlider from '../components/ImageSlider'
+import BodyParts from '../components/BodyParts'
 
 export default function Home() {
   return (
@@ -50,6 +51,11 @@ export default function Home() {
       {/* Image Slider */}
       <View>
         <ImageSlider />
+      </View>
+
+      {/* Body Parts */}
+      <View className="flex-1">
+        <BodyParts />
       </View>
     </SafeAreaView>
   )
